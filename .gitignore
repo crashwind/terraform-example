@@ -1,0 +1,17 @@
+*.retry
+
+pass
+openrc
+password.ovh.vault
+
+tmp/
+*.swp
+
+.terraform/
+
+# Crash log files
+crash.log
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
