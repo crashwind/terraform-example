@@ -1,0 +1,10 @@
+cfg_server:
+  name: "rs0" # (Required)
+  group: "mongo" # (Required) Always pass in the group id used for the config servers
+
+replica_set:
+  name: "rs0" # name of the replica set for the config server (prefix of fqdn)
+  group: "mongo" # group name for all servers in the replica set
+
+cluster_role: "replicaSet"
+mongodb_security: "x509"

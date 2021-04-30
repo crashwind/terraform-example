@@ -1,0 +1,14 @@
+- hosts: all
+  roles:
+    - undergreen.mongodb
+  vars:
+    mongodb_net_bindip: "{{ hostvars[ansible_fqdn]['internal_ip'] }},127.0.0.1"
+    mongodb_login_host: "{{ hostvars[groups['mongo_master'][0]].internal_ip }}"
+    mongodb_login_host_ip: ""
+    mongodb_replication_replset: "rs0"
+    mongodb_replication_params:
+      - {
+          host_name: "{{ hostvars[ansible_fqdn]['internal_ip'] }}",
+          host_port: "{{ mongodb_net_port }}",
+          host_type: replica,
+        }

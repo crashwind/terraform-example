@@ -1,0 +1,3 @@
+[mongo:children]
+mongo_master
+mongo_replicas
