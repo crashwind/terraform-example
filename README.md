@@ -2,6 +2,12 @@
 
 terraform with ansible example (ovh)
 
+## files
+```
+openrc  - ENV file from OVH web interface (auth url, tenant id, etc...)
+tokens  - OVH_APPLICATION_KEY, OVH_APPLICATION_SECRET, OVH_CONSUMER_KEY
+```
+
 ## prerequisites
 ovh works well with terraform v0.12
 ```
